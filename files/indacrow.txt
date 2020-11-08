@@ -1,0 +1,35 @@
+matematica/probabilita
+algoritmi
+architetture dei pc
+programmazione ad oggetti
+sistemi operativi
+automazione
+database
+fisica
+resti 
+diritto
+embedded
+HPC
+TecWeb
+FondamentiElabImmagini
+Mobile
+RicercaOperativa
+TelegramBot
+Robots
+Chatbot
+SmartCity
+Compilatori
+MACHINELEARNING
+Sistemi Distribuiti
+Sistemi Informativi
+CyberForensics
+Business Intelligence
+Pervasive Computing
+SmartCity
+SmartHome
+VideoMaking
+Cucina
+ArtiMarziali
+Tiro con Arco
+Visione Artificiale
+Droni
