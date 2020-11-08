@@ -5,7 +5,7 @@ print("\nFiles:")
 files= []
 for file in os.listdir("./files"):
     if file.endswith(".txt"):
-        print("-found " + os.path.join("./files", file))
+        print("-found " + file)
         files.append(file)
 
 #read lines for each file
@@ -20,7 +20,12 @@ for file in files:
     #    count += 1
     #    print("Line {}: {}".format(count, line.strip()))
 
-print(data)
+print("\nLoaded correctly {} files ".format( len(data) ))
+for x in range(len(data)):
+    print( "-file {} has {} lines".format(x, len(data[x])))
+
+#print(data)
+
 #count = 0
 # Strips the newline character
 #for line in Lines:
