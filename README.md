@@ -7,6 +7,9 @@
 nothing people!
 just pyhton3
 
+## Run
+place files .txt inside the files folder, one idea for each line, as the example <br>
+run program with python IdeaGen.py
 
 ## Built With
 
