@@ -32,31 +32,29 @@ for x in range(len(data)):
 #print(data)
 #GUI
 window = tk.Tk()
+#array for the labels
+labels=[]
+#creates many frames as the number of files
+for x in range(len(data)):
+    frame = tk.Frame(master=window, relief=tk.RIDGE, borderwidth=5,  bg="black")
+    frame.pack(fill=tk.BOTH, expand=True)
+    label = tk.Label(
+        master=frame,
+        text="Idea "+str(x),
+        fg="white",
+        bg="black",
+        height=5
+    )
+    label.pack()
+    labels.append(label)
 
-frame = tk.Frame(master=window, relief=tk.RIDGE, borderwidth=5,  bg="black")
-frame.pack(fill=tk.BOTH, expand=True)
-label = tk.Label(
-    master=frame,
-    text="Idea 1",
-    fg="white",
-    bg="black",
-    height=5
-)
-label.pack()
-frame2 = tk.Frame(master=window, relief=tk.RIDGE, borderwidth=5,  bg="black")
-frame2.pack(fill=tk.BOTH, expand=True)
-label2 = tk.Label(
-    master=frame2,
-    text="Idea 2",
-    fg="white",
-    bg="black",
-    height=5
-)
-label2.pack()
 #random button
 def rand_gen():
     print("The button was clicked!")
-    label["text"] = "Good bye"
+    #for all the groups
+    for x in range(len(data)):
+        #label of the group is a random on in the group
+        labels[x]["text"] = data[x][0]
 
 button = tk.Button(master=window, text="Random Generate!", command=rand_gen,
     width=20,
