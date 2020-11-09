@@ -1,5 +1,6 @@
 import os
 import tkinter as tk
+from random import randrange
 
 #find txt files
 print("\nFiles:")
@@ -50,11 +51,10 @@ for x in range(len(data)):
 
 #random button
 def rand_gen():
-    print("The button was clicked!")
     #for all the groups
     for x in range(len(data)):
-        #label of the group is a random on in the group
-        labels[x]["text"] = data[x][0]
+        #label of the group is a random in the group
+        labels[x]["text"] = data[x][randrange(len(data[x]))].strip()
 
 button = tk.Button(master=window, text="Random Generate!", command=rand_gen,
     width=20,

@@ -6,7 +6,6 @@ sistemi operativi
 automazione
 database
 fisica
-resti 
 diritto
 embedded
 HPC
