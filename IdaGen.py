@@ -1,4 +1,5 @@
 import os
+import tkinter as tk
 
 #find txt files
 print("\nFiles:")
@@ -20,12 +21,49 @@ for file in files:
     #    count += 1
     #    print("Line {}: {}".format(count, line.strip()))
 
+if len(data)==0:
+    print("NO FILES FOUND.")
+    exit()
+
 print("\nLoaded correctly {} files ".format( len(data) ))
 for x in range(len(data)):
     print( "-file {} has {} lines".format(x, len(data[x])))
 
 #print(data)
+#GUI
+window = tk.Tk()
 
+frame = tk.Frame(master=window, relief=tk.RIDGE, borderwidth=5,  bg="black")
+frame.pack(fill=tk.BOTH, expand=True)
+label = tk.Label(
+    master=frame,
+    text="Idea 1",
+    fg="white",
+    bg="black",
+    height=5
+)
+label.pack()
+frame2 = tk.Frame(master=window, relief=tk.RIDGE, borderwidth=5,  bg="black")
+frame2.pack(fill=tk.BOTH, expand=True)
+label2 = tk.Label(
+    master=frame2,
+    text="Idea 2",
+    fg="white",
+    bg="black",
+    height=5
+)
+label2.pack()
+#random button
+def rand_gen():
+    print("The button was clicked!")
+    label["text"] = "Good bye"
+
+button = tk.Button(master=window, text="Random Generate!", command=rand_gen,
+    width=20,
+    height=2)
+button.pack()
+
+window.mainloop()
 #count = 0
 # Strips the newline character
 #for line in Lines:
