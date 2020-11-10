@@ -1,5 +1,5 @@
 #test files
-
+**/*.txt
 .url
 
 # Byte-compiled / optimized / DLL files
